@@ -1,0 +1,5 @@
+*.o
+*.swp
+server
+test_run
+.DS_Store
