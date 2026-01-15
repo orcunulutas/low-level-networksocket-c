@@ -20,7 +20,7 @@ void test_buffer_append () {
     buffer_init(&b);
     char *msg="hello world";
     buffer_append(&b,(uint8_t*)msg,strlen(msg));
-    assert(b.size = strlen(msg));
+    assert(b.size == strlen(msg));
     assert(b.capacity >= b.size);
     assert(memcmp(b.data,msg,b.size) ==0);
     buffer_free(&b);
